@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>13章課題</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="自家焙煎コーヒーが買えるお店">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!--ヘッダー-->
+  <header>
+    <!--ロゴ-->
+    <a href="index.html" id="logo">
+      <img src="images/logo.png" alt="ロゴ">
+    </a>
+    <nav id="nav-sp">
+      <ul>
+        <li><a href="index.html">CONCEPT</a></li>
+        <li><a href="index.html">PRODUCT</a></li>
+        <li><a href="index.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <!-- スマホ用メニューボタン -->
+    <img id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+    <img src="images/button-menu.png" alt="ナビゲーションを開く">
+    </button>
+    <!-- スマホ用ナビゲーション -->
+    <nav id="nav-sp">
+      <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+      </button>
+
+      <nav>
+        <ul>
+          <li>
+            <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+                src="images/logo-sp.png" alt="トップページに戻る"></a>
+          </li>
+          <li><a class="menu" href="index.html#concept"
+              onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a></li>
+          <li><a class="menu" href="index.html#product"
+              onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a></li>
+          <li><a class="menu" href="index.html#contact"
+              onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
+
+        </ul>
+      </nav>
+
+  </header>
+  <main>
+    <article>
+      <!-- メインビジュアル -->
+      <section id="main-visual">
+        <div id="main-visual">
+          <h1>Organic Cafe</h1>
+          <p>自家焙煎コーヒーが買えるお店</p>
+          <img src="images/main-image.jpg" alt="メインビジュアル">
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>
