@@ -15,41 +15,44 @@
   <header>
     <!--ロゴ-->
     <a href="index.html" id="logo">
-      <img src="images/logo.png" alt="ロゴ">
-    </a>
-    <nav id="nav-sp">
+      <img src="images/logo.png" alt="トップページに戻る"> </a>
+    <!-- PC用ナビゲーション -->
+    <nav id="nav-pc">
       <ul>
-        <li><a href="index.html">CONCEPT</a></li>
-        <li><a href="index.html">PRODUCT</a></li>
-        <li><a href="index.html">CONTACT</a></li>
+        <li><a href="index.html#CONCEPT">CONCEPT</a></li>
+        <li><a href="index.html#PRODUCT">PRODUCT</a></li>
+        <li><a href="index.html#CONTACT">CONTACT</a></li>
       </ul>
     </nav>
     <!-- スマホ用メニューボタン -->
-    <img id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
-    <img src="images/button-menu.png" alt="ナビゲーションを開く">
-    </button>
+    <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く"
+      onclick="document.getElementById('nav-sp').style.display = 'block'">
+  </img>
+
     <!-- スマホ用ナビゲーション -->
-    <nav id="nav-sp">
+    <div id="nav-sp">
       <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
         <img src="images/button-close.png" alt="ナビゲーションを閉じる">
       </button>
-
-      <nav>
+      <nuv>
         <ul>
           <li>
-            <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
-                src="images/logo-sp.png" alt="トップページに戻る"></a>
+            <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">
+              <img src="images/logo-sp.png" alt="トップページに戻る"></a>
           </li>
+
           <li><a class="menu" href="index.html#concept"
               onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a></li>
           <li><a class="menu" href="index.html#product"
               onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a></li>
           <li><a class="menu" href="index.html#contact"
               onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
-
         </ul>
-      </nav>
+        </nav>
 
+
+    </div>
+    </div>
   </header>
   <main>
     <article>
@@ -58,11 +61,13 @@
         <div id="main-visual">
           <h1>Organic Cafe</h1>
           <p>自家焙煎コーヒーが買えるお店</p>
-          <img src="images/main-image.jpg" alt="メインビジュアル">
         </div>
+        <img src="images/main-image.jpg" alt="メインビジュアル">
       </section>
     </article>
   </main>
+
+
 </body>
 
 </html>
