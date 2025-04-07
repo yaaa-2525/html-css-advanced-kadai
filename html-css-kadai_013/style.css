@@ -78,6 +78,10 @@ body {
   top: 20px;
   right: 20px;
 }
+button{
+  background-color: #ce933e;
+  border: none; 
+}
 
 #nav-sp  ul {
   padding-left: 0;
